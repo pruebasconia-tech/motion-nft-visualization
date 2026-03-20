@@ -119,7 +119,7 @@ export function Visualization({
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)) // Cap at 2x for perf
       renderer.setClearColor(0x0a0a0a, 1)
       renderer.shadowMap.enabled = true
-      renderer.shadowMap.type = THREE.PCFShadowShadowMap
+      renderer.shadowMap.type = THREE.PCFShadowMap
 
       containerRef.current.appendChild(renderer.domElement)
       console.log(`[VOXEL] Renderer initialized: ${width}x${height}`)
